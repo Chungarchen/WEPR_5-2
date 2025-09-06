@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Customer Survey</title>
+  <link rel="stylesheet" href="styles/main.css" />
+</head>
+<body>
+  <h1>Customer Survey</h1>
+  <p>Please fill out the form below.</p>
+
+  <form action="survey" method="post" class="info">
+    <p>
+      <label>Email:</label>
+      <input type="email" name="email" value="" required>
+    </p>
+    <p>
+      <label>First Name:</label>
+      <input type="text" name="firstName" value="" required>
+    </p>
+    <p>
+      <label>Last Name:</label>
+      <input type="text" name="lastName" value="" required>
+    </p>
+    <p>
+      <label>Heard From:</label>
+      <select name="heardFrom">
+        <option value="Search Engine">Search Engine</option>
+        <option value="Friend">Friend</option>
+        <option value="Newspaper">Newspaper</option>
+        <option value="Other">Other</option>
+      </select>
+    </p>
+    <p>
+      <label></label>
+      <input type="checkbox" name="updates" value="yes"> Please send me updates
+    </p>
+    <p>
+      <label>Contact Via:</label>
+      <input type="radio" name="contact" value="email" checked> Email
+      <input type="radio" name="contact" value="text"> Text
+    </p>
+    <p>
+      <input type="submit" value="Submit Survey">
+    </p>
+  </form>
+</body>
+</html>
